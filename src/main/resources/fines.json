@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "vehicleId": 1,
+    "reason": "SPEEDING",
+    "amount": 50,
+    "timeSlot": 1
+  },
+  {
+    "id": 2,
+    "vehicleId": 5,
+    "reason": "RED_LIGHT",
+    "amount": 120,
+    "timeSlot": 1
+  },
+  {
+    "id": 3,
+    "vehicleId": 3,
+    "reason": "OTHER",
+    "amount": 200,
+    "timeSlot": 2
+  },
+  {
+    "id": 4,
+    "vehicleId": 7,
+    "reason": "SPEEDING",
+    "amount": 80,
+    "timeSlot": 3
+  },
+  {
+    "id": 5,
+    "vehicleId": 6,
+    "reason": "RED_LIGHT",
+    "amount": 100,
+    "timeSlot": 4
+  },
+  {
+    "id": 6,
+    "vehicleId": 11,
+    "reason": "SPEEDING",
+    "amount": 60,
+    "timeSlot": 5
+  },
+  {
+    "id": 7,
+    "vehicleId": 15,
+    "reason": "SPEEDING",
+    "amount": 75,
+    "timeSlot": 6
+  },
+  {
+    "id": 8,
+    "vehicleId": 8,
+    "reason": "RED_LIGHT",
+    "amount": 90,
+    "timeSlot": 6
+  }
+]

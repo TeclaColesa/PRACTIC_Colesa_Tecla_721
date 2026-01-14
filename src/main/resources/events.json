@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "vehicleId": 1,
+    "type": "SPEEDING",
+    "severity": 4,
+    "timeSlot": 1
+  },
+  {
+    "id": 2,
+    "vehicleId": 5,
+    "type": "RED_LIGHT",
+    "severity": 3,
+    "timeSlot": 1
+  },
+  {
+    "id": 3,
+    "vehicleId": 3,
+    "type": "ACCIDENT",
+    "severity": 2,
+    "timeSlot": 2
+  },
+  {
+    "id": 4,
+    "vehicleId": 2,
+    "type": "PRIORITY_PASS",
+    "severity": 1,
+    "timeSlot": 2
+  },
+  {
+    "id": 5,
+    "vehicleId": 7,
+    "type": "SPEEDING",
+    "severity": 5,
+    "timeSlot": 3
+  },
+  {
+    "id": 6,
+    "vehicleId": 1,
+    "type": "SPEEDING",
+    "severity": 2,
+    "timeSlot": 3
+  },
+  {
+    "id": 7,
+    "vehicleId": 10,
+    "type": "ACCIDENT",
+    "severity": 1,
+    "timeSlot": 4
+  },
+  {
+    "id": 8,
+    "vehicleId": 6,
+    "type": "RED_LIGHT",
+    "severity": 2,
+    "timeSlot": 4
+  },
+  {
+    "id": 9,
+    "vehicleId": 14,
+    "type": "PRIORITY_PASS",
+    "severity": 2,
+    "timeSlot": 5
+  },
+  {
+    "id": 10,
+    "vehicleId": 11,
+    "type": "SPEEDING",
+    "severity": 3,
+    "timeSlot": 5
+  },
+  {
+    "id": 11,
+    "vehicleId": 15,
+    "type": "SPEEDING",
+    "severity": 4,
+    "timeSlot": 6
+  },
+  {
+    "id": 12,
+    "vehicleId": 8,
+    "type": "RED_LIGHT",
+    "severity": 1,
+    "timeSlot": 6
+  },
+  {
+    "id": 13,
+    "vehicleId": 12,
+    "type": "SPEEDING",
+    "severity": 1,
+    "timeSlot": 7
+  },
+  {
+    "id": 14,
+    "vehicleId": 5,
+    "type": "ACCIDENT",
+    "severity": 2,
+    "timeSlot": 7
+  }
+]

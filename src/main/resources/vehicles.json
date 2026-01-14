@@ -1,0 +1,107 @@
+[
+  {
+    "id": 12,
+    "licensePlate": "H-BUS-212",
+    "type": "BUS",
+    "ownerCity": "Hanover",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 4,
+    "licensePlate": "B-CTC-104",
+    "type": "CAR",
+    "ownerCity": "Berlin",
+    "status": "BLOCKED"
+  },
+  {
+    "id": 15,
+    "licensePlate": "HH-CAR-515",
+    "type": "CAR",
+    "ownerCity": "Hamburg",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 7,
+    "licensePlate": "S-TR-707",
+    "type": "TRUCK",
+    "ownerCity": "Stuttgart",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 2,
+    "licensePlate": "M-SC-202",
+    "type": "BUS",
+    "ownerCity": "Munich",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 9,
+    "licensePlate": "D-BUS-909",
+    "type": "BUS",
+    "ownerCity": "Dresden",
+    "status": "BLOCKED"
+  },
+  {
+    "id": 10,
+    "licensePlate": "HB-TR-010",
+    "type": "TRUCK",
+    "ownerCity": "Bremen",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 3,
+    "licensePlate": "HH-TR-303",
+    "type": "TRUCK",
+    "ownerCity": "Hamburg",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 6,
+    "licensePlate": "F-BUS-606",
+    "type": "BUS",
+    "ownerCity": "Frankfurt",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 13,
+    "licensePlate": "B-TR-313",
+    "type": "TRUCK",
+    "ownerCity": "Berlin",
+    "status": "BLOCKED"
+  },
+  {
+    "id": 14,
+    "licensePlate": "M-CAR-414",
+    "type": "CAR",
+    "ownerCity": "Munich",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 1,
+    "licensePlate": "B-CTC-101",
+    "type": "CAR",
+    "ownerCity": "Berlin",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 8,
+    "licensePlate": "LE-CAR-808",
+    "type": "CAR",
+    "ownerCity": "Leipzig",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 11,
+    "licensePlate": "N-CAR-111",
+    "type": "CAR",
+    "ownerCity": "Nuremberg",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 5,
+    "licensePlate": "K-CTC-505",
+    "type": "CAR",
+    "ownerCity": "Cologne",
+    "status": "ACTIVE"
+  }
+]
