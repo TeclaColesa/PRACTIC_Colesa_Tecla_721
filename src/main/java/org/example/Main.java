@@ -6,6 +6,7 @@ import org.example.model.Vechicle;
 import org.example.repository.FineRepository;
 import org.example.repository.TrafficEventRepository;
 import org.example.repository.VechicleRepository;
+import org.example.service.VechicleService;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -22,13 +23,13 @@ public class Main {
         for (Fine fine : fineRepository.findAll()) {
             System.out.println(fine);
         }
-        System.out.println("Anzahl der Bussgelder: " + fineRepository.findAll().size() );
         for (Vechicle vechicle : vechicleRepository.findAll()) {
             System.out.println(vechicle);
         }
-        System.out.println("Anzahl der Fahrzeuge: " + vechicleRepository.findAll().size());
 
         System.out.println("---------------------------------------------------------------------");
+        VechicleService vechicleService = new VechicleService(vechicleRepository);
+        vechicleService.filterByVehicleTypeAndStatus();
 
     }
 }
