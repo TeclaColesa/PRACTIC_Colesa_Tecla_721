@@ -1,0 +1,15 @@
+[13] | B-TR-313 | TRUCK | Berlin | city=BLOCKED
+[4] | B-CTC-104 | CAR | Berlin | city=BLOCKED
+[1] | B-CTC-101 | CAR | Berlin | city=ACTIVE
+[10] | HB-TR-010 | TRUCK | Bremen | city=ACTIVE
+[5] | K-CTC-505 | CAR | Cologne | city=ACTIVE
+[9] | D-BUS-909 | BUS | Dresden | city=BLOCKED
+[6] | F-BUS-606 | BUS | Frankfurt | city=ACTIVE
+[15] | HH-CAR-515 | CAR | Hamburg | city=ACTIVE
+[3] | HH-TR-303 | TRUCK | Hamburg | city=ACTIVE
+[12] | H-BUS-212 | BUS | Hanover | city=ACTIVE
+[8] | LE-CAR-808 | CAR | Leipzig | city=ACTIVE
+[14] | M-CAR-414 | CAR | Munich | city=ACTIVE
+[2] | M-SC-202 | BUS | Munich | city=ACTIVE
+[11] | N-CAR-111 | CAR | Nuremberg | city=ACTIVE
+[7] | S-TR-707 | TRUCK | Stuttgart | city=ACTIVE
