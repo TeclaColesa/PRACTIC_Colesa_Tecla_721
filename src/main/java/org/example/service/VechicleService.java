@@ -7,6 +7,7 @@ import org.example.repository.VechicleRepository;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -72,6 +73,28 @@ public class VechicleService {
 
         System.out.println("Sorted vehicles (by ownerCity ascending, then by id descending):");
         sortedVechicles.forEach(System.out::println);
+    }
+
+    //write list of vehicles in the file  vehicles_sorted.txt
+    public void saveToFile(){
+        List<Vechicle> sortedVechicles = repository.findAll().stream()
+                .sorted((v1, v2) -> {
+                    int cityComparison = v1.getOwnerCity().compareTo(v2.getOwnerCity());
+                    if (cityComparison != 0) {
+                        return cityComparison;
+                    }
+                    return Integer.compare(v2.getId(), v1.getId());
+                })
+                .collect(Collectors.toList());
+
+        try (PrintWriter writer = new PrintWriter("vehicles_sorted.txt")) {
+            for (Vechicle v : sortedVechicles) {
+                writer.println(v.toString());
+            }
+            System.out.println("Datele au fost scrise in fisier txt");
+        } catch (Exception e) {
+            throw new RuntimeException("cannot write to file: " + "vehicles_sorted.txt", e);
+        }
     }
 }
 

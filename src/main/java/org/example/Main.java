@@ -35,5 +35,6 @@ public class Main {
         vechicleService.sortByOwnerCityAndId();
 
         System.out.println("---------------------------------------------------------------------");
+        vechicleService.saveToFile();
     }
 }
