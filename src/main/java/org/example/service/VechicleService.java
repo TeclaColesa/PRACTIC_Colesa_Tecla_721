@@ -51,4 +51,27 @@ public class VechicleService {
         }
 
     }
+
+    //Sortierung der Fahrzeuge
+    //Sortieren Sie die Liste aller Fahrzeuge wie folgt:
+    //● aufsteigend nach ownerCity
+    //● bei gleichem ownerCity absteigend nach id
+    //Geben Sie die sortierte Liste anschließend auf der
+    //Konsole aus. Die Ausgabe erfolgt im gleichen Format wie
+    //in Aufgabe 1.
+    public void sortByOwnerCityAndId(){
+        List<Vechicle> sortedVechicles = repository.findAll().stream()
+                .sorted((v1, v2) -> {
+                    int cityComparison = v1.getOwnerCity().compareTo(v2.getOwnerCity());
+                    if (cityComparison != 0) {
+                        return cityComparison;
+                    }
+                    return Integer.compare(v2.getId(), v1.getId());
+                })
+                .collect(Collectors.toList());
+
+        System.out.println("Sorted vehicles (by ownerCity ascending, then by id descending):");
+        sortedVechicles.forEach(System.out::println);
+    }
 }
+

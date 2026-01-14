@@ -31,5 +31,9 @@ public class Main {
         VechicleService vechicleService = new VechicleService(vechicleRepository);
         vechicleService.filterByVehicleTypeAndStatus();
 
+        System.out.println("---------------------------------------------------------------------");
+        vechicleService.sortByOwnerCityAndId();
+
+        System.out.println("---------------------------------------------------------------------");
     }
 }
