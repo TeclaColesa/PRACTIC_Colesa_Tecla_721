@@ -1,6 +1,6 @@
 package org.example.model;
 
-public enum VechicleType {
+public enum VehicleType {
     CAR,
     TRUCK,
     BUS

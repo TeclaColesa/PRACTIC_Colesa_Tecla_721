@@ -2,6 +2,6 @@ package org.example.model;
 
 public enum FineReason {
     SPEEDING,
-    RED_LIHGT,
+    RED_LIGHT,
     OTHER
 }

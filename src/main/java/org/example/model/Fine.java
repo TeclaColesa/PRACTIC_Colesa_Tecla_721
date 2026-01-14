@@ -2,14 +2,16 @@ package org.example.model;
 
 public class Fine implements Identifiable<Integer>{
     private int id;
-    private int vechicleId;
+    private int vehicleId;
     private int amount;
     private FineReason reason;
     private int timeSlot;
 
+    protected Fine(){}
+
     public Fine(int id, int vechicleId, int amount, FineReason reason, int timeSlot) {
         this.id = id;
-        this.vechicleId = vechicleId;
+        this.vehicleId = vechicleId;
         this.amount = amount;
         this.reason = reason;
         this.timeSlot = timeSlot;
@@ -24,12 +26,12 @@ public class Fine implements Identifiable<Integer>{
         this.id = id;
     }
 
-    public int getVechicleId() {
-        return vechicleId;
+    public int getVehicleId() {
+        return vehicleId;
     }
 
-    public void setVechicleId(int vechicleId) {
-        this.vechicleId = vechicleId;
+    public void setVehicleId(int vehicleId) {
+        this.vehicleId = vehicleId;
     }
 
     public int getAmount() {
@@ -58,6 +60,6 @@ public class Fine implements Identifiable<Integer>{
 
     @Override
     public String toString() {
-        return id + " | " + vechicleId + " | " + reason + " | " + amount + " | " + timeSlot;
+        return id + " | " + vehicleId + " | " + reason + " | " + amount + " | " + timeSlot;
     }
 }

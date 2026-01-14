@@ -2,14 +2,16 @@ package org.example.model;
 
 public class TrafficEvent implements Identifiable<Integer>{
     private int id;
-    private int vechicleId;
+    private int vehicleId;
     private EventType type;
     private int severity;
     private int timeSlot;
 
+    protected TrafficEvent(){}
+
     public TrafficEvent(int id, int vechicleId, EventType eventType, int severity, int timeSlot) {
         this.id = id;
-        this.vechicleId = vechicleId;
+        this.vehicleId = vechicleId;
         this.type = eventType;
         this.severity = severity;
         this.timeSlot = timeSlot;
@@ -24,12 +26,12 @@ public class TrafficEvent implements Identifiable<Integer>{
         this.id = id;
     }
 
-    public int getVechicleId() {
-        return vechicleId;
+    public int getVehicleId() {
+        return vehicleId;
     }
 
-    public void setVechicleId(int vechicleId) {
-        this.vechicleId = vechicleId;
+    public void setVehicleId(int vehicleId) {
+        this.vehicleId = vehicleId;
     }
 
     public EventType getType() {
@@ -58,6 +60,6 @@ public class TrafficEvent implements Identifiable<Integer>{
 
     @Override
     public String toString() {
-        return id + " | " + vechicleId + " | " + type + " | " + severity + " | " + timeSlot;
+        return id + " | " + vehicleId + " | " + type + " | " + severity + " | " + timeSlot;
     }
 }

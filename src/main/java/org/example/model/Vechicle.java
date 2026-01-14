@@ -3,11 +3,13 @@ package org.example.model;
 public class Vechicle implements Identifiable<Integer>{
     private int id;
     private String licensePlate;
-    private VechicleType type;
+    private VehicleType type;
     private String ownerCity;
     private VechicleStatus status;
 
-    public Vechicle(int id, String licensePlate, VechicleType type, String ownerCity, VechicleStatus status) {
+    protected Vechicle(){}
+
+    public Vechicle(int id, String licensePlate, VehicleType type, String ownerCity, VechicleStatus status) {
         this.id = id;
         this.licensePlate = licensePlate;
         this.type = type;
@@ -32,11 +34,11 @@ public class Vechicle implements Identifiable<Integer>{
         this.licensePlate = licensePlate;
     }
 
-    public VechicleType getType() {
+    public VehicleType getType() {
         return type;
     }
 
-    public void setType(VechicleType type) {
+    public void setType(VehicleType type) {
         this.type = type;
     }
 
@@ -58,6 +60,6 @@ public class Vechicle implements Identifiable<Integer>{
 
     @Override
     public String toString() {
-        return id + " | " + licensePlate + " | " + type + " | " + ownerCity + " | " + status;
+        return "[" +id + "] | " + licensePlate + " | " + type + " | " + ownerCity + " | city=" + status;
     }
 }

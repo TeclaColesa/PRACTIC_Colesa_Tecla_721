@@ -1,17 +1,34 @@
 package org.example;
 
+import org.example.model.Fine;
+import org.example.model.TrafficEvent;
+import org.example.model.Vechicle;
+import org.example.repository.FineRepository;
+import org.example.repository.TrafficEventRepository;
+import org.example.repository.VechicleRepository;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+    public static void main(String[] args) {
+        TrafficEventRepository trafficEventRepository = new TrafficEventRepository();
+        FineRepository fineRepository = new FineRepository();
+        VechicleRepository vechicleRepository = new VechicleRepository();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+        for (TrafficEvent event : trafficEventRepository.findAll()) {
+            System.out.println(event);
         }
+        System.out.println("Anzahl der Ereignisse: " + trafficEventRepository.findAll().size());
+        for (Fine fine : fineRepository.findAll()) {
+            System.out.println(fine);
+        }
+        System.out.println("Anzahl der Bussgelder: " + fineRepository.findAll().size() );
+        for (Vechicle vechicle : vechicleRepository.findAll()) {
+            System.out.println(vechicle);
+        }
+        System.out.println("Anzahl der Fahrzeuge: " + vechicleRepository.findAll().size());
+
+        System.out.println("---------------------------------------------------------------------");
+
     }
 }
