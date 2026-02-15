@@ -28,13 +28,24 @@ public class Main {
         }
 
         System.out.println("---------------------------------------------------------------------");
-        VechicleService vechicleService = new VechicleService(vechicleRepository);
-        vechicleService.filterByVehicleTypeAndStatus();
+        VechicleService vechicleService = new VechicleService(vechicleRepository, trafficEventRepository, fineRepository);
+        //vechicleService.filterByVehicleTypeAndStatus();
 
         System.out.println("---------------------------------------------------------------------");
-        vechicleService.sortByOwnerCityAndId();
+        //vechicleService.sortByOwnerCityAndId();
 
         System.out.println("---------------------------------------------------------------------");
-        vechicleService.saveToFile();
+        //vechicleService.saveToFile();
+
+        System.out.println("---------------------------------------------------------------------");
+        int i = 0;
+        for (TrafficEvent event : trafficEventRepository.findAll()) {
+            if (i < 5) {
+                System.out.println(vechicleService.riskScoreFormat(i++, event.getType(), event.getSeverity()));
+            }
+        }
+
+        System.out.println("---------------------------------------------------------------------");
+
     }
 }
