@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         TrafficEventRepository trafficEventRepository = new TrafficEventRepository();
         FineRepository fineRepository = new FineRepository();
-        VechicleRepository vechicleRepository = new VechicleRepository();
+        VechicleRepository vehicleRepository = new VechicleRepository();
 
         for (TrafficEvent event : trafficEventRepository.findAll()) {
             System.out.println(event);
@@ -23,12 +23,12 @@ public class Main {
         for (Fine fine : fineRepository.findAll()) {
             System.out.println(fine);
         }
-        for (Vechicle vechicle : vechicleRepository.findAll()) {
+        for (Vechicle vechicle : vehicleRepository.findAll()) {
             System.out.println(vechicle);
         }
 
         System.out.println("---------------------------------------------------------------------");
-        VechicleService vechicleService = new VechicleService(vechicleRepository, trafficEventRepository, fineRepository);
+        VechicleService vechicleService = new VechicleService(vehicleRepository, trafficEventRepository, fineRepository);
         //vechicleService.filterByVehicleTypeAndStatus();
 
         System.out.println("---------------------------------------------------------------------");
@@ -46,6 +46,13 @@ public class Main {
         }
 
         System.out.println("---------------------------------------------------------------------");
+        vechicleService.calculateTotalRiskForAllVehicles();
+        vechicleService.sortVehiclesByTotalRisk();//prints first 5 vehicles
+        vechicleService.printSafestVechicle();
+
+        System.out.println("---------------------------------------------------------------------");
+        vechicleService.saveReportToFile();
+
 
     }
 }
